@@ -1,0 +1,309 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+body {
+    background: #000;
+    color: #fff;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(header-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.logo {
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.logo img {
+    height: 52px;
+    margin-top: 7px;
+    color: #9f001e;
+    cursor: pointer;
+}
+
+.btn {
+    margin-right: 70px;
+}
+
+.btn2 {
+    background: transparent;
+    border: 1px solid #ffff;
+    display: inline;
+    text-align: center;
+}
+
+.btn2 img {
+    width: 14px;
+    margin-left: 6px;
+}
+
+.btn button {
+    padding: 4px;
+    width: 91px;
+    margin: 0px 17px;
+    font-size: 15px;
+    background-color: #d30202;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn .btn2 {
+    background: transparent;
+    border: 1px solid #fff;
+    position: relative;
+}
+
+.content_container {
+    width: 100%;
+    height: auto;
+    /* background-color: pink; */
+    text-align: center;
+    /* position: relative; */
+    /* margin-top: 30px; */
+    padding-top: 142px;
+}
+
+.content_container h1 {
+    font-size: 46px;
+}
+
+.content_container h3 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.content_container h4 {
+    margin-bottom: 14px;
+
+}
+
+.content_container p {
+    margin-bottom: 21px;
+
+}
+
+.main .email {
+    width: 328px;
+    padding: 13px 25px;
+    position: relative;
+    left: -68px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+    background-color: #a19e9b;
+}
+
+.main .email:hover {
+    box-shadow: 2px 4px 5px #fff;
+}
+
+.btn3 {
+    padding: 10px 25px;
+    position: absolute;
+    right: 414px;
+    background-color: red;
+    /* font-size: 14px; */
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    color: #ffff;
+
+}
+
+.btn3:hover {
+    background-color: #ee2b2b;
+    box-shadow: 0px 3px 4px #ac3a3a;
+}
+
+.btn3::after {
+    content: '>';
+    position: absolute;
+    right: 4px;
+    bottom: 6px;
+    font-size: 28px;
+}
+
+.row {
+    width: 100%;
+    height: 100%;
+    /* background-color: pink; */
+    /* display: flex; */
+    padding: 76px 0px;
+    border-top: 6px solid #333;
+    border-bottom: 6px solid #333;
+}
+.row #line{
+    width: 100%;
+    height: 6px;
+    background-color: #333;
+}
+
+.colom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px
+}
+
+.text {
+    width: 535px;
+}
+
+.text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 24px;
+}
+
+.img3 img {
+    height: 247px;
+}
+
+.fquestions {
+    width: 100%;
+    height: 100%;
+    /* background-color: deeppink;*/
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.fquestions h2 {
+    font-size: 30px;
+}
+
+.accordition {
+    margin: 60px auto;
+    max-width: 750px;
+
+}
+
+.accordition li {
+    width: 100%;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.accordition label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    font-weight: bolder;
+    transition: transform 0.5s;
+
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordition .matter {
+    background: #303030;
+    text-align: left;
+    padding: 0px 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+
+}
+
+.accordition input[type="radio"]:checked+label+.matter {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordition input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+#next {
+    margin-top: 15px;
+}
+
+#next .email:hover {
+    box-shadow: 2px 4px 5px #fff;
+}
+
+footer {
+    width: 100%;
+    padding: 74px 50px;
+    /* background-color: #e4d4d7;*/
+    border-top: 6px solid #333;
+    margin-top: 50px;
+}
+
+.row3 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    max-width: 75%;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.col3 li {
+    list-style-type: none;
+    margin: 10px 0px;
+}
+
+.col3 a {
+    font-size: 20px;
+    color: #fff;
+}
+
+#change {
+    margin: 31px 0px;
+    position: relative;
+    left: -17px;
+}
+
+.col3 p {
+    font-size: 28px;
+}
+
+.head {
+    position: relative;
+    left: 73px;
+    font-size: 24px;
+}
